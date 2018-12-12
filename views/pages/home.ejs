@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <% include ../common/head %>
+<body>
+  <% include ../common/nav %>
+
+  <p>Ez a webprog honlap.</p>
+  <%= 'undefined'>
+
+<h1>My First Heading</h1>
+<%= feltoltes.szam %>
+<%= feltoltes.szoveg %>
+<%= feltoltes.ezegyvaltozo %>
+<p>My first paragraph.</p>
+<table class="table table-dark">
+<% feltoltes.tomb.forEach(function(content) { %>
+ <tr>
+   <td><%= content %></td>
+ </tr>
+<% }); %>
+
+</table>
+  <% include ../common/footer %>
+  </body>
+</html>
